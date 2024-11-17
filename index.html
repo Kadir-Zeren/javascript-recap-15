@@ -47,11 +47,12 @@
             class="form-control"
             id="harcama-alani"
             placeholder="Manav, Bakkal, fatura"
+            required
           />
         </div>
         <div class="col-6">
           <label for="tarih" class="form-label">Tarih</label>
-          <input type="date" class="form-control" id="tarih" />
+          <input type="date" class="form-control" id="tarih" required />
         </div>
         <div class="col-12">
           <label for="miktar" class="form-label">Harcanan Miktar</label>
@@ -60,11 +61,14 @@
             class="form-control"
             id="miktar"
             placeholder="1000 ₺"
+            required
           />
         </div>
 
         <div class="col-12 text-center">
-          <button type="submit" class="btn btn-warning">Sign in</button>
+          <button id="kaydet" type="submit" class="btn btn-warning">
+            Kaydet
+          </button>
         </div>
       </form>
 
@@ -109,6 +113,10 @@
           </tr>
         </tbody>
       </table>
+
+      <section class="text-center">
+        <button class="btn btn-warning">Bilgileri Temizle</button>
+      </section>
     </main>
 
     <script src="app.js"></script>
